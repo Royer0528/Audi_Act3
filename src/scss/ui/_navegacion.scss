@@ -1,0 +1,21 @@
+@use '../custom' as *;
+
+.navegacion {
+    background-color: $secondary;
+    color: $white;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+
+    &__container {
+        @include make-container;
+        max-width: map-get($map: $container-max-widths, $key: xxl);
+    }
+
+    &__row {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}

@@ -4,6 +4,8 @@ const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const purgecss = require('gulp-purgecss');
 const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps');
+const terser = require('gulp-terser-js');
 
 // Imagenes
 const imagemin = require('gulp-imagemin');
@@ -31,6 +33,13 @@ function cssBuild(done) {
     done();
 }
 
+function javascript() {
+    return src('src/js/**/*.js')
+        .pipe(terser())
+        .pipe(sourcemaps.write('.'))
+        .pipe(dest('build/js'));
+}
+
 function imagenes(done) {
     
     src('src/img/**/*')
@@ -42,6 +51,8 @@ function imagenes(done) {
 
 function dev( ) {
     watch('src/scss/**/*.scss', css);
+    watch('src/js/**/*.js', javascript);
+    
 }
 
 exports.css = css;
