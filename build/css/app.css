@@ -11653,3 +11653,26 @@ textarea.form-control-lg {
   padding: 1rem;
   margin-bottom: 0;
 }
+
+.navegacion {
+  background-color: #313c4e;
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    text-align: left;
+  }
+}
+.navegacion__container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px;
+}
+.navegacion__row {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
