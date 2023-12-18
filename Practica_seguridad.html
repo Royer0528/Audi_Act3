@@ -3,24 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Página de Información</title>
-    <link rel="stylesheet" href="Practicas.css"> 
-    <link rel="stylesheet" href="Practicas.scss"> 
-    <!-- Aquí puedes agregar enlaces a hojas de estilo CSS, scripts, etc. si es necesario -->
+    <link rel="stylesheet" href="http://localhost/build/css/practicas.css"> 
+    <!-- <link rel="stylesheet" href="http://localhost/src/scss/ui/practicas.scss"> -->
+    <link rel="stylesheet" href="/build/css/practicas.css">
+    <style>
+        /* Estilos para la distribución de las columnas */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        section {
+            width: 30%;
+            margin: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Información sobre prácticas de seguridad</h1>
-    
-    <p>Aquí puedes colocar información detallada sobre las prácticas de seguridad.</p>
-    
-    <!-- Aquí puedes insertar tu video, por ejemplo, usando la etiqueta <video> -->
-    <video width="450" height="360" controls>
-        <source src="tu_video.mp4" type="video/mp4">
-        Tu navegador no admite el elemento de video.
-    </video>
-    
-    <!-- Puedes agregar más contenido si es necesario -->
+    <header>
+        <h1>Información sobre prácticas de seguridad</h1>
+    </header>
 
-    <!-- Opcionalmente, puedes agregar un enlace para volver a la página anterior -->
-    <a href="#" onclick="history.back();">Volver</a>
+    <main>
+        <section id="informacion1">
+            <h2>Prácticas de Seguridad: Parte 1</h2>
+            <p>Aquí puedes colocar información detallada sobre las primeras prácticas de seguridad.</p>
+            <video controls>
+                <source src="tu_video1.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
+        </section>
+
+       <!--<section id="informacion2">
+            <h2>Prácticas de Seguridad: Parte 2</h2>
+            <p>Más información sobre otras prácticas de seguridad.</p>
+            <video controls>
+                <source src="tu_video2.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
+        </section>-->
+    </main>
+
+    <section id="comentarios">
+        <h2>Comentarios y Dudas</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <!-- Opcionalmente, un enlace para volver a la página anterior -->
+        <a href="#" onclick="history.back();">Volver</a>
+    </footer>
 </body>
 </html>
