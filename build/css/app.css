@@ -11677,46 +11677,29 @@ textarea.form-control-lg {
   padding-bottom: 5rem;
 }
 
-/*$body-color: #fff;
-$body-bg-color: #212529;
-$text-color: #6c757d;
-$accent-color: #6aae96;
-
-body {
-    color: $body-color;
-    background-color: $body-bg-color;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-
-    h1 {
-        color: $text-color;
-    }
-
-    p {
-        color: $accent-color;
-        font-size: 18px;
-        line-height: 1.6;
-    }
-
-    a {
-        color: $accent-color;
-        text-decoration: none;
-        display: block;
-        margin-top: 20px;
-        width: 100px;
-        padding: 10px;
-        border: 1px solid $accent-color;
-        border-radius: 5px;
-        text-align: center;
-
-        &:hover {
-            background-color: $accent-color;
-            color: $body-color;
-        }
-    }
+/* Estilos para centrar un solo video */
+main {
+  display: flex;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  height: 100vh;
+  /* Utilizar todo el alto disponible */
 }
-*/
+
+section {
+  max-width: 80%;
+  /* Limitar el ancho del contenedor del video */
+}
+
+section video {
+  width: 100%;
+  /* Ajustar el video al ancho del contenedor */
+  height: auto;
+  max-width: 100%;
+}
+
 body {
   background-color: #fbfbfb;
 }
