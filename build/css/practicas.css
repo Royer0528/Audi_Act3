@@ -32,21 +32,3 @@ a:hover {
     background-color: #6aae96;
     color: #fff;
 }
-
-/* Estilos para centrar un solo video */
-main {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    height: 100vh; /* Utilizar todo el alto disponible */
-}
-
-section {
-    max-width: 80%; /* Limitar el ancho del contenedor del video */
-}
-
-section video {
-    width: 100%; /* Ajustar el video al ancho del contenedor */
-    height: auto;
-    max-width: 100%;
-}
