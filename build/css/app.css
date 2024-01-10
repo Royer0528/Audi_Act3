@@ -11615,7 +11615,7 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .footer__widget {
     flex: 0 0 auto;
-    width: 25%;
+    width: 33.33333333%;
   }
 }
 .footer__logo {
