@@ -1,41 +1,85 @@
-var formulario = false;
+let formulario = false;
 if (document.querySelector('#validar-correo')) {
     formulario = document.querySelector('#validar-correo')
 }
-var botonConfirmarCorreo = false;
+let botonConfirmarCorreo = false;
 if (document.querySelector('#confirmarCorreo')) {
     botonConfirmarCorreo = document.querySelector('#confirmarCorreo');
 }
-var email = false;
+let email = false;
 if (document.querySelector('#email')) {
     email = document.querySelector('#email');
 }
-var botonNoIp = false ;
+let botonNoIp = false ;
 if (document.querySelector('#botonNoIp')) {
     botonNoIp = document.querySelector('#botonNoIp');
 }
-var botonSiIp = false;
+let botonSiIp = false;
 if (document.querySelector('#botonSiIp')) {
     botonSiIp = document.querySelector('#botonSiIp');
+}
+let selectAlmacen_1 = false; 
+if (document.querySelector('#validarAlmacenamiento_1')) {
+    selectAlmacen_1 = document.querySelector('#validarAlmacenamiento_1');
+}
+let selectAlmacen_2 = false; 
+if (document.querySelector('#validarAlmacenamiento_2')) {
+    selectAlmacen_2 = document.querySelector('#validarAlmacenamiento_2');
+}
+let selectAlmacen_3 = false; 
+if (document.querySelector('#validarAlmacenamiento_3')) {
+    selectAlmacen_3 = document.querySelector('#validarAlmacenamiento_3');
+}
+let selectAlmacen_4 = false; 
+if (document.querySelector('#validarAlmacenamiento_4')) {
+    selectAlmacen_4 = document.querySelector('#validarAlmacenamiento_4');
+}
+let selectAlmacen_5 = false;
+if (document.querySelector('#validarAlmacenamiento_5')) {
+    selectAlmacen_5 = document.querySelector('#validarAlmacenamiento_5');
+}
+let verificarAlmacen = false;
+if (document.querySelector('#verificarAlmacen')) {
+    verificarAlmacen = document.querySelector('#verificarAlmacen')
 }
 /* Eventos */
 eventListeners();
 function eventListeners() {
     document.addEventListener('DOMContentLoaded',() => {
         console.log('listo');
-        console.log(botonNoIp);
-        console.log(botonSiIp);
     });
     if (botonConfirmarCorreo) {
         botonConfirmarCorreo.addEventListener('click', validarCorreo);   
     }
 
     if (botonNoIp) {
-        botonNoIp.addEventListener('click',verificarIpNo)
+        botonNoIp.addEventListener('click',verificarIpNo);
     }
 
     if (botonSiIp) {
-        botonSiIp.addEventListener('click',verificarIpSi)
+        botonSiIp.addEventListener('click',verificarIpSi);
+    }
+    if (verificarAlmacen) {
+        verificarAlmacen.addEventListener('click',verificarAlmacenCorrecto);
+    }
+}
+
+function verificarAlmacenCorrecto() {
+    let total = Number(selectAlmacen_1.value) + Number(selectAlmacen_2.value) + Number(selectAlmacen_3.value) + Number(selectAlmacen_4.value) + Number(selectAlmacen_5.value);
+    if (total != 5) {
+        Swal.fire({
+            title: "Incorrecto",
+            text: "¡Parece que una información sensible se te ha filtrado! Revisa cuidadosamente tus opciones y vuelve a intentario",
+            icon:"warning",
+        });
+    } else {
+        Swal.fire({
+            title: "¡Bien hecho!",
+            text: "Has entendido como hay que clasificar y determinar que personas tendrán acceso a la información dentro de la empresa Asegúrate de crear restricciones de seguridad y políticas de almacenamiento",
+            icon: "success",
+            showConfirmButton: false,
+            footer: '<a href="b_nda&sla.html" type="button" class="btn btn-primary">Siguiente</a>'
+        });
     }
 }
 

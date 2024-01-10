@@ -21,22 +21,58 @@
             </div>
         </div>
     </header>
+
     <section class="container-xl py-4">
         <div class="row align-items-center justify-content-center ">
             <div class="col-md-8 border shadow p-3">
-                <div class="mb-3">
-                    <h5 class="section">Clasificar la Información II</h5>
-                    <p class="mt-1">
-                        Como líder y empleado tienes que saber que el robo de información supone una pérdida para la empresa, por ello, están en la obligación de definir las políticas de seguridad, leyes y regulaciones de protección de datos que proporcionan las bases para definir responsabilidades, objetivos, acuerdos, contratos y códigos de conducta a seguir, Después de haber redactado el documento con todas las especificaciones de regulaciones a seguir, debes estar enterado que información va a ser compartida de manera pública o privada. 
-                    </p>
-                    <p class="mt-1">
-                        • Privada. Es la información sensible que pueda afectar a la organización y que es recomendable que sea solo compartido internamente, por ejemplo; información financiera, políticas y procedimientos, datos de clientes o empleados
-                        <br>
-                        • Público. Información que, si bien no es necesario que se divulgue, no implica ningún impacto a la empresa, por ejemplo; la misión, visión de una empresa, datos de contacto o informes anuales.
-                    </p>
-                </div>
-                <a href="a_calsificarInf_Act.html" id="confirmar" type="button" class="btn btn-primary mb-3 p-1">Siguiente</a>
+                <form action="" id="validarDireccionIp">
+                    <div class="mb-3">
+                        <h5 class="section">Almacenamiento</h5>
+                        <label for="direccionIp" class="form-label">Ahora que ya vimos como clasificar cuando la información debe ser compartida con los empleados y los clientes. Elige la la opción que consideres correcta, según tu criterio para que deba ser compartida de manera pública o si debe mantenerse privada. Considera si la opción que elijas va afectar negativamente a la empresa:</label>
+                        <hr>
+                        <div class="d-flex mb-2 align-items-center justify-content-between">
+                            <label class="me-3" for="almacenamiento_1">Datos sobre productos o precios ofrecidos</label>
+                            <select name="almacenamiento_1" id="validarAlmacenamiento_1">
+                                <option value="1">Pública</option>
+                                <option value="0">Privada</option>
+                            </select>
+                        </div>
+                        <div class="d-flex mb-2 align-items-center justify-content-between">
+                            <label class="me-3" for="almacenamiento_2">Proceso de desarrollo del producto</label>
+                            <select name="almacenamiento_2" id="validarAlmacenamiento_2">
+                                <option value="0">Pública</option>
+                                <option value="1">Privada</option>
+                            </select>
+                        </div>
+                        <div class="d-flex mb-2 align-items-center justify-content-between">
+                            <label class="me-3" for="almacenamiento_3">Información de los empleados y los clientes</label>
+                            <select name="almacenamiento_3" id="validarAlmacenamiento_3">
+                                <option value="0">Pública</option>
+                                <option value="1">Privada</option>
+                            </select>
+                        </div>
+                        <div class="d-flex mb-2 align-items-center justify-content-between">
+                            <label class="me-3" for="almacenamiento_4">Contratos con provedores y socios comerciales</label>
+                            <select name="almacenamiento_4" id="validarAlmacenamiento_4">
+                                <option value="0">Pública</option>
+                                <option value="1">Privada</option>
+                            </select>
+                        </div>
+                        <div class="d-flex mb-2 align-items-center justify-content-between">
+                            <label class="me-3" for="almacenamiento_5">Misiones y valores</label>
+                            <select name="almacenamiento_5" id="validarAlmacenamiento_5">
+                                <option value="1">Pública</option>
+                                <option value="0">Privada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="separar-botones">
+                        <button id="verificarAlmacen" type="button" class="btn btn-primary mb-3 p-1">Comprobar</button>
+                        
+                    </div>
+                </form>
             </div>
+            
         </div>
     </section>
 
@@ -84,7 +120,11 @@
                 </div>
             </div>
             <p class="footer__copyright">Protección de datos en las PYMES | Todos los derechos reservados. 2023 &copy;</p>
-    </footer>  
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="/src/js/app.js"></script>
+    
 
 </body>
 </html>
