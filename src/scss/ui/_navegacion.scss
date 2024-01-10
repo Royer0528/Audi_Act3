@@ -18,4 +18,10 @@
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
+
+    &__barraSuper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

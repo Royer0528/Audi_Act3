@@ -16,8 +16,11 @@
     <header class="navegacion">
         <div class="navegacion__container">
             <div class="navegacion__row">
-                <h2>Sección 1</h2>
-                
+                <div class="navegacion__barraSuper">
+                    <h2>Sección 1</h2>
+                    <a href="index.html" class="btn btn-primary">Inicio</a>
+                </div>
+                <h2>Prácticas de Seguridad</h2>
             </div>
         </div>
     </header>
@@ -26,9 +29,18 @@
             <div class="col-md-8 border shadow p-3">
                 <div class="mb-3">
                     <h5 class="section">Introducción</h5>
-                    <p class="introduction"></p>
+                    <p class="introduction">
+                        ¿En que nos puedo ayudar las prácticas de seguridad?
+                    </p>
+
                 </div>
-                <a href="a_ClasificarInf.html" id="confirmar" type="button" class="btn btn-primary mb-3 p-1">Siguiente</a>
+                <div class="videoPracticas_Seguridad">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bd9ow9roDao?si=9l9xArpfj5zpPuIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="">
+                    <a href="index.html" id="confirmar" type="button" class="btn btn-secondary my-3 p-1">Volver</a>
+                    <a href="a_ClasificarInf.html" id="confirmar" type="button" class="btn btn-primary my-3 p-1">Siguiente</a>
+                </div>
             </div>
         </div>
     </section>
@@ -38,41 +50,46 @@
             <div class="footer__row">
                 <div class="footer__widget">
                     <h3 class="footer__heading">Sección 1</h3>
-                    <div class="footer__nav"></div>
-                    <a href="Seccion_1.html" class="footer__link">Introducción</a>
-                    <a href="#" class="footer__link">Clasificar información</a>
-                    <a href="#" class="footer__link">NDA y SLA</a>
-                    <a href="#" class="footer__link">Almacenamiento</a>
+                    <div class="footer__nav">
+                        <a href="Seccion_1.html" class="footer__link">Introducción</a>
+                        <a href="a_ClasificarInf.html" class="footer__link">Clasificar información</a>
+                        <a href="b_nda&sla.html" class="footer__link">NDA y SLA</a>
+                        <a href="c_respaldos.html" class="footer__link">Respaldos</a>
                     </div>
+                </div>
 
-                    <div class="footer__widget">
-                        <h3 class="footer__heading">Sección 2</h3>
-                        <div class="footer__nav">
-                            <a href="#" class="footer__link">Infraestructura de una red</a>
-                            <a href="#" class="footer__link">Dispositivos de interconexión</a>
-                            <a href="#" class="footer__link">Cableado</a>
-                        </div>
+                <div class="footer__widget">
+                    <h3 class="footer__heading">Sección 2</h3>
+                    <div class="footer__nav">
+                        <a href="Seccion_2.html" class="footer__link">Introducción</a>
+                        <a href="a_dispositivosInter.html" class="footer__link">Dispositivos de interconexión</a>
+                        <a href="b_direccionIp.html" class="footer__link">Dirección IP</a>
+                        <a href="c_vpn.html" class="footer__link">VPN</a>
+                        <a href="d_proxy.html" class="footer__link">Proxy</a>
+                        <a href="e_tor.html" class="footer__link">Tor</a>
+                        <a href="f_cableado.html" class="footer__link">Cableado</a>
                     </div>
-                    <div class="footer__widget">
-                        <h3 class="footer__heading">Sección 3</h3>
-                        <div class="footer__nav">
-                            <a href="Seccion_3.html" class="footer__link">Introducción</a>
-                            <a href="a_Password_1.html" class="footer__link">Contraseñas</a>
-                            <a href="b_SistemasOp_2.html" class="footer__link">Sistemas operativos</a>
-                            <a href="c_Proteccion_3.html" class="footer__link">Protección de software malicioso</a>
-                            <a href="d_Cifrados_4.html" class="footer__link">Cifrados</a>
-                            <a href="d_CifradoInf_4-1.html" class="footer__link">1.1 Cifrado de información </a>
-                            <a href="d_CifradoCorreo_4-2.html" class="footer__link">1.2 Cifrado de correo electrónico</a>
-                            <a href="d_SSL_4-3.html" class="footer__link">1.3 SSL, TLS y HTTPS </a>
-                            <a href="e_GestionarCorreo_5.html" class="footer__link">Gestión de tipo de servicios (correos electrónicos)</a>
-                            <a href="e_ServiciosFinancieros_5-1.html" class="footer__link">Gestión de tipo de servicios (Servicios financieros)</a>
-                            <a href="Glosario.html" class="footer__link">Glosario</a>                       
-                        </div>
+                </div>
+
+                <div class="footer__widget">
+                    <h3 class="footer__heading">Sección 3</h3>
+                    <div class="footer__nav">
+                        <a href="Seccion_3.html" class="footer__link">Introducción</a>
+                        <a href="a_Password_1.html" class="footer__link">Contraseñas</a>
+                        <a href="b_SistemasOp_2.html" class="footer__link">Sistemas operativos</a>
+                        <a href="c_Proteccion_3.html" class="footer__link">Protección de software malicioso</a>
+                        <a href="d_Cifrados_4.html" class="footer__link">Cifrados</a>
+                        <a href="d_CifradoInf_4-1.html" class="footer__link">1.1 Cifrado de información </a>
+                        <a href="d_CifradoCorreo_4-2.html" class="footer__link">1.2 Cifrado de correo electrónico</a>
+                        <a href="d_SSL_4-3.html" class="footer__link">1.3 SSL, TLS y HTTPS </a>
+                        <a href="e_GestionarCorreo_5.html" class="footer__link">Gestión de tipo de servicios (correos electrónicos)</a>
+                        <a href="e_ServiciosFinancieros_5-1.html" class="footer__link">Gestión de tipo de servicios (Servicios financieros)</a>
+                        <a href="Glosario.html" class="footer__link">Glosario</a>   
                     </div>
                 </div>
             </div>
             <p class="footer__copyright">Protección de datos en las PYMES | Todos los derechos reservados. 2023 &copy;</p>
-    </footer>  
+    </footer>   
 
 </body>
 </html>

@@ -11676,6 +11676,11 @@ textarea.form-control-lg {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.navegacion__barraSuper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* Estilos para centrar un solo video */
 .section_video {
