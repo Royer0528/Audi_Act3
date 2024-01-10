@@ -11678,8 +11678,9 @@ textarea.form-control-lg {
 }
 
 /* Estilos para centrar un solo video */
-main {
+.section_video {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   /* Centrar horizontalmente */
   align-items: center;
@@ -11688,18 +11689,11 @@ main {
   /* Utilizar todo el alto disponible */
 }
 
-section {
-  max-width: 80%;
-  /* Limitar el ancho del contenedor del video */
-}
-
-section video {
+.videoPracticas_Seguridad {
   width: 100%;
   /* Ajustar el video al ancho del contenedor */
   height: auto;
   max-width: 100%;
-}
-
-body {
-  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
 }

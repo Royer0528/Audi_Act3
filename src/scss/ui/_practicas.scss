@@ -1,22 +1,16 @@
 /* Estilos para centrar un solo video */
-main {
+.section_video {
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
     height: 100vh; /* Utilizar todo el alto disponible */
 }
 
-section {
-    max-width: 80%; /* Limitar el ancho del contenedor del video */
-}
-
-section video {
+.videoPracticas_Seguridad {
     width: 100%; /* Ajustar el video al ancho del contenedor */
     height: auto;
     max-width: 100%;
-}
-
-
-body {
-    background-color: rgb(251, 251, 251);
+    display: flex;
+    justify-content: center;
 }
