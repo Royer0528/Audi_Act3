@@ -49,3 +49,9 @@ $separacion: 5rem;
         @include m.bgIcono('../img/icono_pro.svg');
     }
 }
+
+.separar-botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
